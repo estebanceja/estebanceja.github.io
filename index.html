@@ -3,7 +3,9 @@
     <head>
         <style>
             body {
-                background: rgb(0, 100, 0);
+                background:  url(https://media.giphy.com/media/uSYQsJQWEv6O4/giphy.gif) no-repeat center center fixed; 
+                background-size: cover;
+                background-color: #cccccc;
                 color: rgb(45, 45, 45);
                 padding: 10px;
                 font-family: arial;
@@ -20,13 +22,20 @@
     
             /* navigation menu */
             nav {
-                border: 5px solid black;
+                animation:change 12s infinite;
                 border-radius: 100px;
-                background: rgb(255, 0, 0);
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
                 padding: 10px;
+            }
+            @keyframes change {
+            0%{background-color:red;}
+            20%{background-color:green;}
+            40%{background-color:blue;}
+            60%{background-color:purple;}
+            80%{background-color:yellow;}
+            100%{background-color:red;}
             }
             nav header {
                 display: flex;
@@ -45,10 +54,11 @@
                 text-decoration: none;
                 color: #fff;
             }
-    
+            
             /* main container area beneath menu */
             main {
-                background: rgb(245, 238, 219);
+                color: white;
+                font-size: 1.5em;
                 display: flex;
             }
             .sidebar {
@@ -56,7 +66,18 @@
                 padding: 10px;
             }
             .sidebar img {
-                width: 200px;
+                 width: 200px;
+                 border: 5px solid black;
+                 border-radius: 100px;
+                 animation:funborder 12s infinite;
+            }
+            @keyframes funborder {
+            0%{border-color:red;}
+            20%{border-color:green;}
+            40%{border-color:blue;}
+            60%{border-color:purple;}
+            80%{border-color:yellow;}
+            100%{border-color:red;}
             }
             .content {
                 flex: 1;
