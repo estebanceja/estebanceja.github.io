@@ -3,14 +3,20 @@
     <head>
         <style>
             body {
-                background:  url(https://media.giphy.com/media/uSYQsJQWEv6O4/giphy.gif) no-repeat center center fixed; 
+                background:  url(https://media.giphy.com/media/uSYQsJQWEv6O4/giphy.gif) no-repeat center center fixed, red; 
                 background-size: cover;
-                background-color: #cccccc;
-                color: rgb(45, 45, 45);
                 padding: 10px;
                 font-family: arial;
-                
-            }
+                animation: change 12s infinite;
+    }
+              @keyframes change {
+            0%{background-color:red;}
+            20%{background-color:green;}
+            40%{background-color:blue;}
+            60%{background-color:purple;}
+            80%{background-color:indigo;}
+            100%{background-color:red;}
+}
             header {
                 font-size: 1.5em;
                 font-weight: bold;
@@ -22,20 +28,13 @@
     
             /* navigation menu */
             nav {
-                animation:change 12s infinite;
-                border-radius: 100px;
+                background-color: black;
+                border-color: white;
+                border-radius: 15px;
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
                 padding: 10px;
-            }
-            @keyframes change {
-            0%{background-color:red;}
-            20%{background-color:green;}
-            40%{background-color:blue;}
-            60%{background-color:purple;}
-            80%{background-color:yellow;}
-            100%{background-color:red;}
             }
             nav header {
                 display: flex;
@@ -105,9 +104,8 @@
             
             <main>
                 <div class="sidebar">
-                    <img src="https://avatars1.githubusercontent.com/u/43155070?s=460&v=4">
+                    <img src=https://www.hardyms.org/ourpages/auto/2015/10/30/59825062/img_20151024_131418.jpg>
                 </div>
-    
                 <div class="content">
                     <h1>Esteban Ceja</h1>
                     <p>Student at Belle Chasse High School</p>
